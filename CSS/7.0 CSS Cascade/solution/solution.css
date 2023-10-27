@@ -1,0 +1,32 @@
+#outer-box {
+  background-color: purple;
+}
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+.inner-box {
+  background-color: red;
+}
+
+/* .inner-box, .box'un üzerinde olursa cascade olmaz
+öncelik sırası önemlidir anlayacağın. */
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.white-text {
+  color: white;
+}
+
+.new-box {
+  background-color: green;
+  padding: 10px;
+  width: 25rem;
+  height: 3rem;
+}

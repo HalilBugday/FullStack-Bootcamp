@@ -1,0 +1,30 @@
+/* Group */
+h1,
+h2 {
+  color: blueviolet;
+}
+
+/* Parent - Child releationship (parent div > child div)*/
+.box > p {
+  color: firebrick;
+}
+/*eğer sadece p yaparsan tüm p'leri kırmızı yapar.*/
+
+/*(ata torun ilişkisi) Descendent parent child gibi alt üst kısımda olmasına gerek duymaz */
+.box li {
+  color: blue;
+}
+
+/* Chained SelectorSelector... super super specific selector (sırası önemli değil)*/
+li.done {
+  color: green;
+}
+
+/* Multiple Combiners (ancestor and chain) */
+ul p.done {
+  font-size: 0.5rem;
+}
+
+.box{
+  background-color: rgb(174, 191, 194);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <!-- position: static; (HTML nesneleri olduğu gibi sıralanacaktır. Bu şekilde olursa HTML elementinin alt, üst, sağ ve sol özellikleri belirlenemez.) -->
+
+  <!-- position: fixed; ( Kaydıracı (scroll) kullansanız bile o element orada yer alacaktır (hareket etmez).)-->
+
+  <!-- position: relative; (Bir HTML elementini sahip olduğu pozisyondan yukarı, aşağı, sağa ve sola doğru ayarlamamızı sağlar.
+    Elementin kapladığı alan tarayıcı tarafından tutulmuştur, dolayısıyla bunda bir değişiklik olmaz.
+    Ancak biz sağ, sol, alt ve üst tarafa doğru hareket ettirebiliriz.)-->
+
+  <!-- position: absolute; Herhangi bir elemente göre ya da element belirtilmediyse tüm HTML sayfasına göre yer alacağı konum piksel olarak ifade edilir-->
+  <style>
+    .red-circle {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 150px;
+      left: 250px;
+    }
+
+    .blue-box {
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+      position: relative;
+      top: 200px;
+      left: 200px;
+    }
+
+  </style>
+</head>
+<!-- Z-Index (x-y ekseninde 3. boyut olan z indexidir aslında hangi nesnenin hangisi üzerine geleceğini belirtir "büyük value küçüğün üzerine biner.")-->
+<body>
+  <div class="blue-box">
+    <div class="red-circle"></div>
+  </div>
+</body>
+<!-- daireyi kutuya göre konumlandırmak istediğimiz için absolute yaptık-->
+</html>
